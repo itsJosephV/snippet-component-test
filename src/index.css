@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 :root {
+
+  --footer-h: 36px
+
   color-scheme: light dark;
   color: rgba(229,229,229);
   background-color: #171717;
@@ -13,3 +16,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+
+
+
