@@ -6,6 +6,6 @@ import { Toaster } from 'sonner'
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <>
     <App />
-    <Toaster richColors theme='dark' />
+    <Toaster richColors theme='dark' position='top-right' />
     </>
 )
