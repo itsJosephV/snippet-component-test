@@ -1,27 +1,10 @@
-# React + TypeScript + Vite
+### Tailwind Snippets - study
+This project is built upon the work of [Alexandru Ţurcanu](https://alexandru.so)'s Snippets site and [Emil Kowalski](https://emilkowal.ski) original work. Credits goes to both of them for their contributions to my learning journey and inspiration.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+#### Purpose
+This project was built to put into practice my TypeScript skills after taking this amazing course 👉 [totaltypescript](https://www.totaltypescript.com/tutorials/beginners-typescript) and to figure out how to work with RadixUI primitives components, all this was possible after spending a few hours studying Alexandru Ţurcanu's code structure & and the techs he used for it.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Additionaly, I would like to extend credits to [Paco Courtsey](https://paco.me), I discovered him two weeks ago and I was fascinated with the simplicity of his personal site, I find beauty in it so I decided to use some of his layout. 
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+IMPORTANT: Do not check how much is the font Paco is using there. 💀
