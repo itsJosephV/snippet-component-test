@@ -1,6 +1,6 @@
 import { IconTypes } from "../types";
 
-export const RadixIcon = ({ width, height, fill }: IconTypes) => {
+export const RadixIcon = ({ width, height }: IconTypes) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +12,7 @@ export const RadixIcon = ({ width, height, fill }: IconTypes) => {
     >
       <path
         d="M12 25a8 8 0 1 1 0-16v16zM12 0H4v8h8V0zM17 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
-        fill={fill}
+        fill="currentColor"
       />
     </svg>
   );

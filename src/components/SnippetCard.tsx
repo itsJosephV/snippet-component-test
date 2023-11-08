@@ -9,6 +9,7 @@ import {
   MixIcon,
   TransformIcon,
 } from "@radix-ui/react-icons";
+import { toast } from "sonner";
 
 export const SnippetCard = ({
   githubLink,
@@ -42,7 +43,13 @@ export const SnippetCard = ({
       <ContextMenu.Portal>
         <ContextMenu.Content className="min-w-[200px] bg-stone-950/50 overflow-hidden rounded-md backdrop-blur-md p-1 rdx-state-open:animate-fade-in rdx-state-closed:animate-fade-out origin-top-left">
           <ContextMenu.Item
-            onClick={sourceButton}
+            onClick={() => {
+              sourceButton()
+              toast.success('Copied to clipboard', {
+                duration: 2000,
+                icon: <CodeIcon width="1.5em" height="1.5em" />
+              })
+            }}
             ref={sourceRef}
             className={contextMenuItemStyle}
           >

@@ -9,11 +9,11 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <main className="min-h-screen flex flex-col relative">
-      <article className="pt-20 pb-12 px-5">
-        <section className="mx-auto container relative">
-          <Header />
-          <div className="border rounded-md border-neutral-600/20 min-h-[350px] max-w-[850px] mx-auto bg-neutral-800/10 flex flex-col justify-center gap-10 items-center">
+    <main className="min-h-screen flex flex-col">
+      <article className="pt-20 pb-12 px-5 flex flex-col">
+        <Header />
+        <section className="mx-auto container">
+          <div role="snippets-container" className="border rounded-md border-neutral-600/20 min-h-[350px] max-w-[850px] mx-auto bg-neutral-800/10 flex flex-col justify-center gap-10 items-center">
             {snippets.map(
               ({ title, githubLink, twPlaygroudLink, source, animation }) => (
                 <SnippetCard
@@ -27,15 +27,15 @@ function App() {
               )
             )}
           </div>
-          <span role="spacer" className="block my-10"></span>
-          <div className="max-w-[650px] mx-auto flex justify-center">
-            <p className="flex flex-row gap-4">
-              <TSIcon width="1.5em" height="1.5em" fill="white" />
-              <ReactIcon width="1.5em" height="1.5em" fill="white" />{" "}
-              <TWIcon width="1.5em" height="1.5em" fill="white" />{" "}
-              <RadixIcon width="1.5em" height="1.5em" fill="white" />{" "}
-            </p>
-          </div>
+        </section>
+        <span role="spacer" className="my-8"></span>
+        <section className="max-w-[650px] mx-auto flex justify-center flex-col">
+          <p className="flex text-emerald-200 justify-center items-center flex-row gap-4">
+            <TSIcon width="1.5em" height="1.5em" />
+            <ReactIcon width="1.5em" height="1.5em" />{" "}
+            <TWIcon width="1.5em" height="1.5em" />{" "}
+            <RadixIcon width="1.5em" height="1.5em" />{" "}
+          </p>
         </section>
       </article>
       <Footer />

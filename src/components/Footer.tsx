@@ -7,7 +7,7 @@ export const Footer = () => {
         <p className="opacity-40">By JosephV</p>
         <p className="opacity-40">{now} - Present</p>
         <a
-          href="www.linkedin.com/in/josephvp"
+          href="https://www.linkedin.com/in/josephvp"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-40 hover:opacity-100 duration-200"

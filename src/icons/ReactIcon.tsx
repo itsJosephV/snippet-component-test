@@ -1,10 +1,10 @@
 import { IconTypes } from "../types";
 
-export const ReactIcon = ({ width, height, fill }: IconTypes) => {
+export const ReactIcon = ({ width, height }: IconTypes) => {
   return (
     <svg
       stroke="currentColor"
-      fill={fill}
+      fill="currentColor"
       strokeWidth="0"
       viewBox="0 0 512 512"
       height={height}

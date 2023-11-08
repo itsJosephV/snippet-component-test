@@ -1,7 +1,7 @@
 export interface IconTypes {
   width: string;
   height: string;
-  fill: string;
+  fill?: string;
 }
 
 export interface TWSnippets  {

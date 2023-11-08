@@ -1,10 +1,10 @@
 import { IconTypes } from "../types";
 
-export const TWIcon = ({ width, height, fill }: IconTypes) => {
+export const TWIcon = ({ width, height }: IconTypes) => {
   return (
     <svg
       stroke="currentColor"
-      fill={fill}
+      fill="currentColor"
       strokeWidth="0"
       role="img"
       viewBox="0 0 24 24"
