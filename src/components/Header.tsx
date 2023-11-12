@@ -14,7 +14,7 @@ const Header = () => {
         <p className="leading-7">
           This small snippets app was initiated with the aim of gaining
           familiarity with RadixUI & improving my TypeScript skills. Layout
-          inspired on Paco Courtsey's website.
+          inspired on Paco Coursey's website.
         </p>
       </div>
       <span role="spacer" className="block my-5"></span>
