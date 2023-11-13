@@ -39,7 +39,7 @@ function App() {
             </div>
           </section>
           <span role="spacer" className="my-8"></span>
-          <section className="max-w-[650px] mx-auto flex justify-center flex-col">
+          <section>
             <p className="flex text-emerald-200 justify-center items-center flex-row gap-4">
               <TSIcon width="1.5em" height="1.5em" />
               <ReactIcon width="1.5em" height="1.5em" />{" "}
