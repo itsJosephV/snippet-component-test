@@ -17,7 +17,7 @@ const Header = () => {
           inspired on Paco Coursey's website.
         </p>
       </div>
-      <span role="spacer" className="block my-5"></span>
+      <span role="separator" className="block my-5"></span>
       <p>Right click the items to open the menu.</p>
     </header>
   );

@@ -7,20 +7,16 @@ import { ReactIcon } from "./icons/ReactIcon";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Fragment } from "react";
+import SnippetContainer from "./components/SnippetContainer";
 
 function App() {
   return (
     <Fragment>
-      <main
-        className="pt-20 pb-14 px-5 container mx-auto min-h"
-      >
+      <main className="pt-20 pb-14 px-5 container mx-auto min-h">
         <Header />
         <article className="flex flex-col">
           <section className="mx-auto container">
-            <div
-              role="snippets-container"
-              className="border rounded-md border-neutral-600/20 min-h-[350px] max-w-[850px] mx-auto bg-neutral-800/10 flex flex-col justify-center gap-10 items-center"
-            >
+            <SnippetContainer>
               {snippets.map(
                 ({ title, githubLink, twPlaygroudLink, source, animation }) => (
                   <SnippetCard
@@ -33,9 +29,9 @@ function App() {
                   />
                 )
               )}
-            </div>
+            </SnippetContainer>
           </section>
-          <span role="spacer" className="my-8"></span>
+          <span role="separator" className="my-8"></span>
           <section>
             <p className="flex text-emerald-200 justify-center items-center flex-row gap-4">
               <TSIcon width="1.5em" height="1.5em" />
