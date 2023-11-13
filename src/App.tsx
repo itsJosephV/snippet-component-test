@@ -8,14 +8,11 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Fragment } from "react";
 
-const footerHeight = "35px"
-
 function App() {
   return (
     <Fragment>
       <main
-        className="pt-20 pb-14 px-5 container mx-auto"
-        style={{ minHeight: `calc(100vh - ${footerHeight})` }}
+        className="pt-20 pb-14 px-5 container mx-auto min-h"
       >
         <Header />
         <article className="flex flex-col">
