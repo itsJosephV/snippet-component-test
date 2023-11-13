@@ -17,7 +17,6 @@ export const SnippetCard = ({
   source,
   animation,
 }: TWSnippets) => {
-  
   const sourceRef = useRef<HTMLDivElement>(null);
   const githubRef = useRef<HTMLAnchorElement>(null);
   const playgroundRef = useRef<HTMLAnchorElement>(null);
@@ -44,16 +43,16 @@ export const SnippetCard = ({
         <ContextMenu.Content className="min-w-[200px] bg-stone-950/50 overflow-hidden rounded-md backdrop-blur-md p-1 rdx-state-open:animate-fade-in rdx-state-closed:animate-fade-out origin-top-left">
           <ContextMenu.Item
             onClick={() => {
-              sourceButton()
-              toast.success('Copied to clipboard', {
+              sourceButton();
+              toast.success("Copied to clipboard", {
                 duration: 2000,
-                icon: <CodeIcon width="1.5em" height="1.5em" />
-              })
+                icon: <CodeIcon width="1.5em" height="1.5em" />,
+              });
             }}
             ref={sourceRef}
             className={contextMenuItemStyle}
           >
-            <span className="mr-1 flex flex-row gap-2 items-center">
+            <span className="mr-1 flex flex-1 gap-2 items-center">
               <CodeIcon />
               Copy Source
             </span>
@@ -66,7 +65,7 @@ export const SnippetCard = ({
             disabled={!animation}
             className={contextMenuItemStyle}
           >
-            <span className="flex flex-row gap-2 items-center">
+            <span className="flex flex-1 gap-2 items-center">
               <TransformIcon /> Copy keyframes
             </span>
             <kbd className="bg-neutral-700/50 py-[1px] px-[4px] rounded-sm mr-1">
@@ -76,7 +75,7 @@ export const SnippetCard = ({
 
           <ContextMenu.Item className={contextMenuItemStyle}>
             <a
-              className="flex flex-row items-center gap-2"
+              className="flex flex-1 items-center gap-2"
               ref={githubRef}
               href={githubLink}
               target="_blank"
@@ -91,7 +90,7 @@ export const SnippetCard = ({
 
           <ContextMenu.Item className={contextMenuItemStyle}>
             <a
-              className="flex flex-row items-center gap-2"
+              className="flex flex-1 items-center gap-2"
               href={twPlaygroudLink}
               ref={playgroundRef}
               target="_blank"
