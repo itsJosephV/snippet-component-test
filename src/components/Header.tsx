@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="max-w-[650px] mx-auto mb-8 flex flex-col">
+    <header className="max-w-[650px] mx-auto mb-10 flex flex-col">
       <div>
         <h1 className="font-semibold mb-5">
           Tailwind Snippets - Study
@@ -15,7 +15,7 @@ const Header = () => {
         </p>
       </div>
       <span role="separator" className="my-5"></span>
-      <p>Right click the items to open the menu.</p>
+      <p><span className="font-semibold">Right-click</span> the items to open the menu.</p>
     </header>
   );
 };

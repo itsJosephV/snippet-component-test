@@ -1,7 +1,7 @@
 const SnippetContainer = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
-      className="border max-w-[850px] mx-auto rounded-md border-neutral-600/20  bg-neutral-800/10 gap-7 p-6"
+      className="border max-w-[850px] mx-auto rounded-md border-neutral-600/20 bg-neutral-800/10 gap-7 p-6 relative"
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fill, minmax(256px, 1fr))",
