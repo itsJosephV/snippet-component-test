@@ -3,7 +3,7 @@ import { TWSnippets } from "../../types";
 export const HoverColoredBorder: TWSnippets = {
   title: "Hover colored border",
   githubLink:
-    "https://github.com/itsJosephV",
+    "https://github.com/itsJosephV/snippets-tailwind-study/blob/main/src/data/tw-snippets/HoverColoredBorder.tsx",
   twPlaygroudLink: "https://play.tailwindcss.com/r75uKFWVZo",
   animation: `theme: {
     extend: {
