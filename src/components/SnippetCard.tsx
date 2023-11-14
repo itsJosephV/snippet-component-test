@@ -25,11 +25,22 @@ export const SnippetCard = ({
   useHotkeys("s", () => sourceRef.current?.click());
   function sourceButton() {
     navigator.clipboard.writeText(ReactDOMServer.renderToStaticMarkup(source));
+    toast.success("Source copied to clipboard", {
+      duration: 2000,
+      icon: <CodeIcon width="1.5em" height="1.5em" />,
+    });
   }
 
   useHotkeys("a", () => animationRef.current?.click());
   function animationButton() {
+    if (animation === undefined) {
+      return;
+    }
     navigator.clipboard.writeText(animation!);
+    toast.success("Animation copied to clipboard", {
+      duration: 2000,
+      icon: <TransformIcon width="1.5em" height="1.5em" />,
+    });
   }
 
   useHotkeys("g", () => githubRef.current?.click());
@@ -48,13 +59,7 @@ export const SnippetCard = ({
       <ContextMenu.Portal>
         <ContextMenu.Content className="min-w-[200px] bg-stone-950/50 overflow-hidden rounded-md backdrop-blur-md p-1 rdx-state-open:animate-fade-in rdx-state-closed:animate-fade-out origin-top-left">
           <ContextMenu.Item
-            onClick={() => {
-              sourceButton();
-              toast.success("Source copied to clipboard", {
-                duration: 2000,
-                icon: <CodeIcon width="1.5em" height="1.5em" />,
-              });
-            }}
+            onClick={sourceButton}
             ref={sourceRef}
             className={contextMenuItemStyle}
           >
@@ -70,13 +75,7 @@ export const SnippetCard = ({
           <ContextMenu.Item
             disabled={!animation}
             className={contextMenuItemStyle}
-            onClick={() => {
-              animationButton();
-              toast.success("Animation copied to clipboard", {
-                duration: 2000,
-                icon: <TransformIcon width="1.5em" height="1.5em" />,
-              });
-            }}
+            onClick={animationButton}
             ref={animationRef}
           >
             <span className="flex flex-1 gap-2 items-center">
