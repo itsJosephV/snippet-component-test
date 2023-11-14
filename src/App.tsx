@@ -5,11 +5,15 @@ import { SnippetCard } from "./components/SnippetCard";
 import snippets from "./data/snippets";
 import Techs from "./components/Techs";
 import Footer from "./components/Footer";
+import SocialMediaLinks from "./components/SocialMediaLinks";
 
 function App() {
   return (
     <Fragment>
-      <main className="pt-20 pb-14 px-5 container mx-auto min-h">
+      <main className="pt-20 pb-14 px-5 container mx-auto min-h relative">
+        <div className="absolute w-full left-0 top-0 py-4 px-5">
+          <SocialMediaLinks />
+        </div>
         <Header />
         <article className="flex flex-col">
           <section>
