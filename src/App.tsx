@@ -1,11 +1,10 @@
+import { Fragment } from "react";
+import Header from "./components/Header";
+import SnippetContainer from "./components/SnippetContainer";
 import { SnippetCard } from "./components/SnippetCard";
 import snippets from "./data/snippets";
-
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import { Fragment } from "react";
-import SnippetContainer from "./components/SnippetContainer";
 import Techs from "./components/Techs";
+import Footer from "./components/Footer";
 
 function App() {
   return (

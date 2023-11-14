@@ -1,14 +1,11 @@
-import { BorderSolidIcon } from "@radix-ui/react-icons";
-
 const Header = () => {
   return (
     <header className="max-w-[650px] mx-auto mb-8 flex flex-col">
       <div>
         <h1 className="font-semibold mb-5">
           Tailwind Snippets - Study
-          <span className="text-xs text-emerald-200 mt-[2px] flex flex-row items-center gap-1">
-            <BorderSolidIcon />
-            Desktop app
+          <span className="text-xs text-emerald-200 mt-[2px] block">
+            — Desktop app
           </span>
         </h1>
         <p className="leading-7">
@@ -17,7 +14,7 @@ const Header = () => {
           inspired on Paco Coursey's website.
         </p>
       </div>
-      <span role="separator" className="block my-5"></span>
+      <span role="separator" className="my-5"></span>
       <p>Right click the items to open the menu.</p>
     </header>
   );

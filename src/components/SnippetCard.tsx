@@ -18,12 +18,18 @@ export const SnippetCard = ({
   animation,
 }: TWSnippets) => {
   const sourceRef = useRef<HTMLDivElement>(null);
+  const animationRef = useRef<HTMLDivElement>(null);
   const githubRef = useRef<HTMLAnchorElement>(null);
   const playgroundRef = useRef<HTMLAnchorElement>(null);
 
   useHotkeys("s", () => sourceRef.current?.click());
   function sourceButton() {
     navigator.clipboard.writeText(ReactDOMServer.renderToStaticMarkup(source));
+  }
+
+  useHotkeys("a", () => animationRef.current?.click());
+  function animationButton() {
+    navigator.clipboard.writeText(animation!);
   }
 
   useHotkeys("g", () => githubRef.current?.click());
@@ -35,7 +41,7 @@ export const SnippetCard = ({
   return (
     <ContextMenu.Root>
       <ContextMenu.Trigger>
-        <div className="min-w-[250px] flex justify-center items-center rounded-md bg-neutral-800 border border-neutral-600/50 py-10">
+        <div className="w-full h-32 flex justify-center items-center rounded-md bg-neutral-800 border border-neutral-600/50">
           {source}
         </div>
       </ContextMenu.Trigger>
@@ -44,7 +50,7 @@ export const SnippetCard = ({
           <ContextMenu.Item
             onClick={() => {
               sourceButton();
-              toast.success("Copied to clipboard", {
+              toast.success("Source copied to clipboard", {
                 duration: 2000,
                 icon: <CodeIcon width="1.5em" height="1.5em" />,
               });
@@ -64,12 +70,20 @@ export const SnippetCard = ({
           <ContextMenu.Item
             disabled={!animation}
             className={contextMenuItemStyle}
+            onClick={() => {
+              animationButton();
+              toast.success("Animation copied to clipboard", {
+                duration: 2000,
+                icon: <TransformIcon width="1.5em" height="1.5em" />,
+              });
+            }}
+            ref={animationRef}
           >
             <span className="flex flex-1 gap-2 items-center">
-              <TransformIcon /> Copy keyframes
+              <TransformIcon /> Copy animation
             </span>
             <kbd className="bg-neutral-700/50 py-[1px] px-[4px] rounded-sm mr-1">
-              K
+              A
             </kbd>
           </ContextMenu.Item>
 
