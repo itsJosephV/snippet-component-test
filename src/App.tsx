@@ -1,13 +1,11 @@
 import { SnippetCard } from "./components/SnippetCard";
 import snippets from "./data/snippets";
-import { RadixIcon } from "./icons/RadixIcon";
-import { TWIcon } from "./icons/TWIcon";
-import { TSIcon } from "./icons/TSIcon";
-import { ReactIcon } from "./icons/ReactIcon";
+
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { Fragment } from "react";
 import SnippetContainer from "./components/SnippetContainer";
+import Techs from "./components/Techs";
 
 function App() {
   return (
@@ -15,7 +13,7 @@ function App() {
       <main className="pt-20 pb-14 px-5 container mx-auto min-h">
         <Header />
         <article className="flex flex-col">
-          <section className="mx-auto container">
+          <section>
             <SnippetContainer>
               {snippets.map(
                 ({ title, githubLink, twPlaygroudLink, source, animation }) => (
@@ -33,12 +31,7 @@ function App() {
           </section>
           <span role="separator" className="my-8"></span>
           <section>
-            <p className="flex text-emerald-200 justify-center items-center flex-row gap-4">
-              <TSIcon width="1.5em" height="1.5em" />
-              <ReactIcon width="1.5em" height="1.5em" />{" "}
-              <TWIcon width="1.5em" height="1.5em" />{" "}
-              <RadixIcon width="1.5em" height="1.5em" />{" "}
-            </p>
+            <Techs />
           </section>
         </article>
       </main>
