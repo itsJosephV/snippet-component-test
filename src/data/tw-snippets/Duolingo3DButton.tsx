@@ -5,7 +5,7 @@ export const Duolingo3DButton: TWSnippets = {
   githubLink: "https://github.com/itsJosephV",
   twPlaygroudLink: "https://play.tailwindcss.com/pnoReUllxg",
   source: (
-    <button onTouchStart="" className="relative touch-auto">
+    <button className="relative touch-auto">
     <div className="absolute inset-x-0 -bottom-2 h-full rounded-lg bg-emerald-700"></div>
 
     <div className="relative transform rounded-lg bg-emerald-500 px-10 py-2 text-white transition duration-200 active:translate-y-2">Press me</div>
