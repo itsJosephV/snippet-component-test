@@ -9,7 +9,7 @@ const SocialMediaLinks = () => {
         rel="noopener noreferrer"
         className="text-neutral-500 hover:text-white duration-200"
       >
-        <GitHubLogoIcon width={"1.2rem"} height={"1.2rem"} />
+        <GitHubLogoIcon width={"1.2em"} height={"1.2em"} />
       </a>
       <a
         href="https://www.linkedin.com/in/josephvp/"
@@ -19,8 +19,8 @@ const SocialMediaLinks = () => {
       >
         <LinkedInLogoIcon
           className="text-neutral-500 hover:text-white duration-200"
-          width={"1.2rem"}
-          height={"1.2rem"}
+          width={"1.2em"}
+          height={"1.2em"}
         />
       </a>
     </div>
