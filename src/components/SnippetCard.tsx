@@ -49,6 +49,8 @@ export const SnippetCard = ({
   const contextMenuItemStyle =
     "pl-2 text-xs py-2 flex justify-between items-center focus:bg-neutral-700/20 rounded-sm outline-none cursor-pointer select-none transition-colors ease-out duration-200 rdx-disabled:cursor-not-allowed rdx-disabled:opacity-50";
 
+    //TODO—— EVEN THE HEIGHT OF THE BUTTON TO THE MENU.ITEM
+
   return (
     <ContextMenu.Root>
       <ContextMenu.Trigger>
