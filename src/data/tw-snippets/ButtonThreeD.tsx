@@ -1,7 +1,7 @@
 import { TWSnippets } from "../../types";
 
 export const ButtonThreeD: TWSnippets = {
-  title: "Duolingo 3D button style",
+  title: "Button threeD",
   githubLink: "https://github.com/itsJosephV/snippets-tailwind-study/blob/main/src/data/tw-snippets/ButtonThreeD.tsx",
   twPlaygroudLink: "https://play.tailwindcss.com/Xf6smH0343",
   source: (
@@ -14,6 +14,3 @@ export const ButtonThreeD: TWSnippets = {
     </button>
   ),
 };
-<div className="px-6 py-3 bg-gray-200 text-black rounded-lg border-b-4 border-b-gray-400 hover:border-b-0 transition-all ease-in-out duration-100">
-  Hover over me
-</div>;
