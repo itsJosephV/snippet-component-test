@@ -3,7 +3,7 @@ import { TWSnippets } from "../../types";
 export const Duolingo3DButton: TWSnippets = {
   title: "Duolingo 3D button style",
   githubLink: "https://github.com/itsJosephV",
-  twPlaygroudLink: "https://play.tailwindcss.com/SpvojNOyWj",
+  twPlaygroudLink: "https://play.tailwindcss.com/pnoReUllxg",
   source: (
     <button onTouchStart="" className="relative touch-auto">
     <div className="absolute inset-x-0 -bottom-2 h-full rounded-lg bg-emerald-700"></div>
