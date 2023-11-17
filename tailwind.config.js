@@ -15,18 +15,24 @@ export default {
           "100%": { opacity: 0, transform: "scale(0.9)" },
         },
         // SNIPPETS ANIMATIONS
-        background: { // HoverArrowToRight Snippet
+        background: {
+          // HoverColoredBorder Snippet
           "0%, 100%": { backgroundPosition: "0% 50%" },
           "50%": { backgroundPosition: "100% 50%" },
         },
+        "background-wave": {
+          // TextBackgroundWave Snippet
+          from: { backgroundPosition: "0% center" },
+          to: { backgroundPosition: "-200% center" },
+        },
       },
-        // RADIX CONTEXT CARD ANIMATION
-        // https://tailwindcss-radix.vercel.app
       animation: {
-        "fade-in": "fade-in 0.1s ease-out",
-        "fade-out": "fade-out 0.1s ease-in",
+        // https://tailwindcss-radix.vercel.app
+        "fade-in": "fade-in 0.1s ease-out", // RADIX CONTEXT CARD ANIMATION
+        "fade-out": "fade-out 0.1s ease-in", // RADIX CONTEXT CARD ANIMATION
         // SNIPPETS ANIMATIONS
-        border: "background ease infinite", // HoverArrowToRight Snippet
+        border: "background ease infinite", // HoverColoredBorder Snippet
+        "background-wave": "background-wave linear infinite", // TextBackgroundWave Snippet
       },
     },
   },
