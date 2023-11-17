@@ -2,7 +2,7 @@ import { TWSnippets } from "../../types";
 
 export const TextBackgroundWave: TWSnippets = {
   title: "Text Background Wave animation",
-  githubLink: "xxx",
+  githubLink: "https://github.com/itsJosephV/snippets-tailwind-study/blob/main/src/data/tw-snippets/TextBackgroundWave.tsx",
   twPlaygroudLink: "https://play.tailwindcss.com/K4lCCQASXc",
   animation: `theme: {
     extend: {
@@ -26,4 +26,3 @@ export const TextBackgroundWave: TWSnippets = {
     </p>
   ),
 };
-
